@@ -27,4 +27,15 @@ creator
   .syncCommands()
   .startServer();
 
+var figlet = require('figlet');
+
+figlet('BrickBot', function(err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+    console.log(data)
+});
+
 // This should serve in localhost:8020/interactions
